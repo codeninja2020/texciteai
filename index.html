@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Texcite × SNAP XFRA — Distributed Green Compute</title>
+<title>Texcite — Distributed Green Compute</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -55,24 +55,6 @@ body {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-}
-
-.cover-left::before {
-  content: '';
-  position: absolute;
-  top: -120px; left: -120px;
-  width: 400px; height: 400px;
-  border-radius: 50%;
-  background: rgba(90,171,128,0.12);
-}
-
-.cover-left::after {
-  content: '';
-  position: absolute;
-  bottom: -80px; right: -80px;
-  width: 280px; height: 280px;
-  border-radius: 50%;
-  background: rgba(200,131,26,0.08);
 }
 
 .cover-right {
@@ -361,11 +343,9 @@ body {
 .card:hover { border-color: var(--sage); }
 
 .card-icon {
-  width: 40px; height: 40px;
-  border-radius: 10px;
+  width: 28px; height: 28px;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 16px;
-  font-size: 18px;
 }
 
 .card-title {
@@ -523,7 +503,7 @@ body {
 .flow-node:last-child::after { display: none; }
 .flow-node:hover::after { background: #f9f7f3; }
 
-.flow-icon { font-size: 24px; display: block; margin-bottom: 10px; }
+.flow-icon { display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; width: 26px; height: 26px; }
 .flow-title { font-family: var(--display); font-size: 13px; font-weight: 700; color: var(--forest); margin-bottom: 7px; }
 .flow-body { font-size: 11.5px; color: var(--muted); font-weight: 300; line-height: 1.6; }
 
@@ -535,15 +515,6 @@ body {
   margin-bottom: 56px;
   position: relative;
   overflow: hidden;
-}
-
-.carbon-hero::before {
-  content: '';
-  position: absolute;
-  top: -80px; right: -80px;
-  width: 280px; height: 280px;
-  border-radius: 50%;
-  background: rgba(90,171,128,0.1);
 }
 
 .carbon-hero-title {
@@ -623,9 +594,9 @@ body {
   line-height: 1.4;
 }
 
-.phase-badge.p1 { background: #e1f0e7; color: var(--forest2); border: 1px solid rgba(61,122,88,0.3); }
-.phase-badge.p2 { background: #fdf3e2; color: var(--gold);    border: 1px solid rgba(200,131,26,0.3); }
-.phase-badge.p3 { background: #fde9d8; color: var(--amber);   border: 1px solid rgba(212,100,15,0.3); }
+.phase-badge.p1 { background: none; color: var(--forest2); border: none; }
+.phase-badge.p2 { background: none; color: var(--gold);    border: none; }
+.phase-badge.p3 { background: none; color: var(--amber);   border: none; }
 
 .phase-title    { font-family: var(--display); font-size: 19px; font-weight: 700; color: var(--forest); margin-bottom: 6px; }
 .phase-timeline { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 12px; }
@@ -754,15 +725,15 @@ footer {
       <h1 class="cover-title">
         <span class="green">Texcite</span><br>
         Distributed<br>Green Compute
-        <span class="sub">× SNAP XFRA Infrastructure Program</span>
+        <span class="sub">SA-Engineered · Solar-Powered · Africa-First</span>
       </h1>
       <p class="cover-desc">
-        A solar-powered edge AI network deployed at schools, hospitals, and businesses — generating inference revenue, passive income for hosts, and certified carbon credits for enterprise customers.
+        Texcite designs and builds its own edge inference nodes — purpose-engineered for South Africa's electrical standards, climate, and connectivity realities — deployed at solar-equipped schools, hospitals, and businesses across the continent.
       </p>
     </div>
     <div class="cover-meta">
       <div class="cover-meta-item"><label>DOCUMENT</label><span>MVP Proposal v1.0</span></div>
-      <div class="cover-meta-item"><label>PROGRAM</label><span>SNAP XFRA Distributed DC</span></div>
+      <div class="cover-meta-item"><label>PROGRAM</label><span>Distributed Compute Network</span></div>
       <div class="cover-meta-item"><label>STAGE</label><span>Seed / Phase 1</span></div>
     </div>
   </div>
@@ -805,12 +776,12 @@ footer {
 
     <div class="cover-kpis">
       <div class="cover-kpi">
-        <div class="num">500<span>+ nodes</span></div>
-        <div class="kl">PHASE 1 TARGET</div>
+        <div class="num">500<span> nodes</span></div>
+        <div class="kl">PHASE 1 FULL TARGET</div>
       </div>
       <div class="cover-kpi">
         <div class="num">R42<span>M ARR</span></div>
-        <div class="kl">PROJECTED ANNUAL REV</div>
+        <div class="kl">PHASE 1 ANNUAL REV</div>
       </div>
       <div class="cover-kpi">
         <div class="num">18<span>k t</span></div>
@@ -830,23 +801,28 @@ footer {
   <div class="page">
     <p class="section-tag">01 — EXECUTIVE SUMMARY</p>
     <h2 class="section-title">A new model for<br>distributed intelligence.</h2>
-    <p class="section-lead">Texcite deploys SNAP XFRA micro-datacenter units at solar-equipped host sites — schools, hospitals, and SMEs — running AI inference workloads. Each node generates compute revenue, passive income for hosts, and certified carbon credits. The network is self-funding and carbon-negative by design.</p>
+    <p class="section-lead">Texcite designs, builds, and deploys its own edge inference nodes at solar-equipped host sites — schools, hospitals, and SMEs — running AI inference workloads. Each node generates compute revenue, passive income for hosts, and certified carbon credits. The network is self-funding and carbon-negative by design.</p>
 
     <div class="stat-strip">
       <div class="stat-cell">
         <div class="stat-bar" style="background:#3d7a58"></div>
-        <div class="stat-num">500<span class="stat-unit">+</span></div>
-        <div class="stat-label">Target host sites in Phase 1 (18 months)</div>
+        <div class="stat-num">10<span class="stat-unit"></span></div>
+        <div class="stat-label">Target host sites in Phase 1 (12 months)</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-bar" style="background:var(--gold2)"></div>
+        <div class="stat-num">500<span class="stat-unit"></span></div>
+        <div class="stat-label">Nodes at Phase 1 full capacity (pilot: 10 nodes)</div>
       </div>
       <div class="stat-cell">
         <div class="stat-bar" style="background:var(--gold2)"></div>
         <div class="stat-num">R42<span class="stat-unit">M</span></div>
-        <div class="stat-label">Projected annual revenue at full Phase 1 capacity</div>
+        <div class="stat-label">Projected annual revenue at Phase 1 full capacity</div>
       </div>
       <div class="stat-cell">
         <div class="stat-bar" style="background:#378add"></div>
         <div class="stat-num">18<span class="stat-unit">k</span></div>
-        <div class="stat-label">Tonnes of CO₂ offset annually across 500-node network</div>
+        <div class="stat-label">Tonnes of CO₂ offset annually at 500-node capacity</div>
       </div>
       <div class="stat-cell">
         <div class="stat-bar" style="background:var(--amber)"></div>
@@ -856,8 +832,8 @@ footer {
     </div>
 
     <div class="highlight-box">
-      <div class="highlight-box-title">⚡ KEY INSIGHT</div>
-      <div class="highlight-box-body">South Africa has two chronically underutilised assets: distributed rooftop solar generation and secure, staffed community premises. SNAP XFRA turns both into an AI compute network. By co-locating inference hardware with solar at schools and hospitals, Texcite eliminates the largest cost in AI infrastructure — energy — while generating verifiable environmental value that companies will pay to claim.</div>
+      <div class="highlight-box-title"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>KEY INSIGHT</div>
+      <div class="highlight-box-body">South Africa has two chronically underutilised assets: distributed rooftop solar generation and secure, staffed community premises. Texcite turns both into an AI compute network. By co-locating purpose-built inference nodes with solar at schools and hospitals, Texcite eliminates the largest cost in AI infrastructure — energy — while generating verifiable environmental value that companies will pay to claim.</div>
     </div>
   </div>
 </section>
@@ -872,37 +848,37 @@ footer {
 
     <div class="card-grid">
       <div class="card">
-        <div class="card-icon" style="background:#eaf2fc">⚡</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <div class="card-title">Energy overproduction</div>
         <div class="card-body">SA's rooftop solar market grew 400% since 2022. Schools and hospitals generate surplus energy during peak hours that goes unmonetised.</div>
         <span class="card-tag">ENERGY ARBITRAGE</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#fde9d8">🧠</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.14"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.14"/></svg></div>
         <div class="card-title">Inference demand surge</div>
         <div class="card-body">Global AI inference demand grows at 85% CAGR. Latency-sensitive workloads need edge compute, not distant cloud datacenters.</div>
         <span class="card-tag">COMPUTE SCARCITY</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#e1f0e7">🌍</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
         <div class="card-title">Carbon credit demand</div>
         <div class="card-body">Voluntary carbon markets projected to reach $250B by 2030. Green compute credits are a newly recognised and underserved asset class.</div>
         <span class="card-tag">CARBON MARKET</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#fdf3e2">🏫</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <div class="card-title">Underutilised premises</div>
-        <div class="card-body">Thousands of schools, clinics, and SMEs have secure premises, stable internet, and existing or planned solar — ideal SNAP XFRA host profiles.</div>
+        <div class="card-body">Thousands of schools, clinics, and SMEs have secure premises, stable internet, and existing or planned solar — ideal Texcite Node host profiles.</div>
         <span class="card-tag">HOST NETWORK</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#f0eef9">🔧</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <div class="card-title">Installer ecosystem gap</div>
         <div class="card-body">Solar and IT installers serve thousands of SME clients but lack a recurring revenue product. Texcite gives them a high-margin managed service.</div>
         <span class="card-tag">PARTNER CHANNEL</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#fceaea">🏛️</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
         <div class="card-title">ESG regulatory pressure</div>
         <div class="card-body">JSE-listed companies face Scope 3 reporting obligations. Green compute offers measurable, auditable emissions reduction — not just offsets.</div>
         <span class="card-tag blue">COMPLIANCE DRIVER</span>
@@ -912,56 +888,200 @@ footer {
 </section>
 
 
+<!-- ══ COMPETITIVE LANDSCAPE ══ -->
+<section class="band-white">
+  <div class="page">
+    <p class="section-tag">02B — COMPETITIVE LANDSCAPE</p>
+    <h2 class="section-title">The closest competitor —<br>and why we win.</h2>
+    <p class="section-lead">SPAN XFRA is the world's most direct analogue to what Texcite is building. Launched in April 2026 with NVIDIA backing and PulteGroup as a homebuilder partner, it validates the distributed edge compute thesis at scale. But it cannot serve Africa — and that is precisely where Texcite operates.</p>
+
+    <div class="card-grid-2" style="margin-bottom:40px;">
+      <div class="card" style="border-color:rgba(180,178,169,0.4);background:#fafaf8;">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.13em;color:var(--muted);margin-bottom:16px;">SPAN XFRA — US MARKET</div>
+        <div class="card-title" style="color:var(--ink2);">Residential &amp; small commercial nodes</div>
+        <div class="card-body" style="margin-bottom:16px;">SPAN XFRA deploys 16-GPU NVIDIA RTX PRO 6000 Blackwell nodes at US homes and new-build properties, leveraging SPAN's proprietary smart electrical panel (UL 3141 certified) to tap underutilised residential grid headroom. Compute is sold to hyperscalers and neocloud providers. Homeowners receive discounted electricity and internet. Proof of concept: 100 nodes in Q3 2026 in the US southwest. Target: 1 GW annual deployment by 2027.</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">NVIDIA partnership &amp; GPU supply secured</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Proven power control IP (SPAN Panel)</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Strong US homebuilder distribution channel</span></div>
+          <div style="height:1px;background:var(--border);margin:4px 0;"></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">Designed for North American 200A residential panels only</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">UL 3141 certified — not valid under SANS / IEC standards</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">No African market roadmap before 2028 at earliest</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">No load-shedding resilience or battery-first architecture</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">No carbon credit program or ESG reporting layer</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:#e24b4a;font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span style="color:var(--muted);font-weight:300;">Residential-first — no commercial / institutional host model</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="border-color:rgba(61,122,88,0.35);background:#f7fbf8;">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.13em;color:var(--sage);margin-bottom:16px;">TEXCITE NODE — AFRICA MARKET</div>
+        <div class="card-title" style="color:var(--forest);">Commercial &amp; institutional nodes</div>
+        <div class="card-body" style="margin-bottom:16px;">Texcite builds its own nodes from SA-sourced components, engineered to SANS 164 / IEC electrical standards, with a 15 kWh LFP battery buffer purpose-designed for load-shedding resilience. Deployed at hospitals, businesses, and schools — not residential homes — for faster procurement, better connectivity, and higher uptime. Carbon credits and ESG reporting are built into the product from day one.</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">SANS 164 / IEC compliant — SA &amp; African grid standard</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">15 kWh LFP battery — load-shedding rated, compute-continuous</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Commercial host model — hospitals, SMEs, schools</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">TexGreen carbon credit program built in from day one</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Fully SA-assembled — B-BBEE compliant supply chain</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">TXOS orchestration — open API, Africa-optimised routing</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Solar-first DC coupling with SA-certified inverters</span></div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:13px;"><span style="color:var(--sage);font-weight:500;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle"><polyline points="20 6 9 17 4 12"/></svg></span><span style="color:var(--muted);font-weight:300;">Local field service — 4hr MTTR, SA spare parts depots</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="background:#eaf4ef;border-color:rgba(61,122,88,0.3);border-left-color:var(--sage);">
+      <div class="highlight-box-title" style="color:var(--forest2);"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>THE MOAT</div>
+      <div class="highlight-box-body">SPAN XFRA validates that distributed edge inference is a real, fundable, NVIDIA-backed market. But it cannot be localised for Africa without a complete re-engineering of its core power control system — the very IP that defines the product. That gap is not a timing issue; it is a structural one. Texcite is not waiting for SPAN to arrive. We are building the African version of this category from scratch, with local supply chain, local regulatory compliance, and a commercial host model that fits how African institutions actually operate. By the time SPAN turns its attention to this continent, Texcite will have 500 nodes in the ground, a certified carbon credit programme running, and an established installer network that no foreign entrant can replicate quickly.</div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ══ TECHNOLOGY ══ -->
 <section class="band-white">
   <div class="page">
     <p class="section-tag">03 — TECHNOLOGY</p>
-    <h2 class="section-title">SNAP XFRA: the<br>distributed DC unit.</h2>
-    <p class="section-lead">SNAP XFRA is a ruggedised, self-contained micro-datacenter for AI inference at the edge — silent, thermally managed, and solar-ready out of the box.</p>
+    <h2 class="section-title">The Texcite Node:<br>built for Africa.</h2>
+    <p class="section-lead">Texcite designs and manufactures its own edge inference nodes — purpose-engineered for South African electrical standards, climate conditions, and connectivity realities. We don't depend on foreign product availability or international supply timelines. We build it here.</p>
 
-    <div class="card-grid-2">
+    <div class="highlight-box">
+      <div class="highlight-box-title"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M6 8h.01M9 8h6"/></svg>WHY TEXCITE BUILDS ITS OWN NODES</div>
+      <div class="highlight-box-body">Centralised hyperscale datacenters take years to permit and billions to build. The distributed compute model changes that equation — but no existing product is engineered for African electrical standards, climate, or supply chain realities. Texcite builds from the ground up: sourcing proven commercial components (NVIDIA GPUs, Dell servers, SA-certified inverters and batteries), integrating them into a weatherised outdoor enclosure designed for our climate, and running our own orchestration software stack. This gives Texcite full control over hardware cost, supply chain, serviceability, and the roadmap — and makes us the only distributed edge compute company purpose-built for African conditions.</div>
+    </div>
+
+    <div class="card-grid-2" style="margin-bottom:32px;">
       <div class="card" style="border-color:rgba(61,122,88,0.3); background:#f7fbf8;">
-        <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.13em;color:var(--sage);margin-bottom:18px;">HARDWARE SPEC</div>
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.13em;color:var(--sage);margin-bottom:18px;">TEXCITE NODE — HARDWARE SPEC</div>
         <table style="width:100%;border-collapse:collapse;">
           <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300;width:48%">GPU Compute</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">4–8× H100 / MI300X equiv.</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">8× NVIDIA RTX PRO 6000 Blackwell</td>
           </tr>
           <tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Peak Draw</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">3.2 – 6.4 kW</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">CPU / Memory</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">2× AMD EPYC · 1.5 TB RAM</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Server Platform</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">Dell PowerEdge (SA-stocked)</td>
           </tr>
           <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Cooling</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">Liquid-loop / immersion</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">Direct liquid cool · 60 dB quiet</td>
           </tr>
           <tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Footprint</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">0.6m² (2U rack or pod)</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Power Standard</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">400V/230V 3-phase · SANS 164</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Battery Buffer</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">15 kWh LFP · load-shedding rated</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Solar Integration</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">DC-coupled · SA inverter certified</td>
           </tr>
           <tr style="border-bottom:1px solid var(--border);">
             <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Connectivity</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">10GbE / fibre / LTE backup</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">Fibre primary · LTE / 5G failover</td>
           </tr>
           <tr>
-            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Power Input</td>
-            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">Grid + DC solar direct</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--muted);font-weight:300">Enclosure</td>
+            <td style="padding:10px 0;font-size:13px;color:var(--forest);font-family:var(--mono)">IP54 weatherised · outdoor-rated</td>
           </tr>
         </table>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;">
         <div class="card">
-          <div class="card-title" style="font-size:15px;">☀️ Solar-first power architecture</div>
-          <div class="card-body">Each unit prioritises on-site solar. Grid power fills gaps. When solar exceeds demand, surplus feeds back to grid or charges batteries — reducing net energy cost toward zero.</div>
+          <div class="card-title" style="font-size:15px;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>Solar-first power architecture</div>
+          <div class="card-body">Each node prioritises on-site solar generation via DC-coupled integration. The 15 kWh LFP battery buffer handles load-shedding seamlessly — compute workloads migrate to healthy nodes during outages rather than dropping. Net energy cost approaches zero at high solar penetration sites.</div>
         </div>
         <div class="card">
-          <div class="card-title" style="font-size:15px;">🌐 Mesh orchestration</div>
-          <div class="card-body">All nodes connect to Texcite's central orchestration layer, routing inference jobs based on node availability, latency, and energy price signals.</div>
+          <div class="card-title" style="font-size:15px;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>TXOS orchestration layer</div>
+          <div class="card-body">Texcite's proprietary TXOS (Texcite Orchestration System) routes inference jobs across the node fleet based on availability, latency requirements, and live energy price signals. Built on open standards — compatible with OpenAI API, Hugging Face, and vLLM inference engines.</div>
         </div>
         <div class="card">
-          <div class="card-title" style="font-size:15px;">📊 Real-time carbon telemetry</div>
-          <div class="card-body">Each unit emits verifiable energy source data and compute hours on renewable power — forming the audit trail for certified carbon credits.</div>
+          <div class="card-title" style="font-size:15px;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Real-time carbon telemetry</div>
+          <div class="card-body">Embedded energy metering logs kWh source (solar vs. grid) every 15 minutes in a tamper-evident, signed data stream. This forms the verifiable audit trail for TexGreen carbon credit issuance — no third-party meter required.</div>
         </div>
+        <div class="card">
+          <div class="card-title" style="font-size:15px;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Local serviceability</div>
+          <div class="card-body">Every component is sourced from SA-stocked distributors — Dell, NVIDIA, Victron, Pylontech. Field replacement takes under 2 hours. No international RMA cycles, no six-week wait for spares. Texcite trains and certifies its own field service technicians.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ NODE MANUFACTURING ══ -->
+<section class="band-cream2">
+  <div class="page">
+    <p class="section-tag">03B — NODE MANUFACTURING &amp; SUPPLY CHAIN</p>
+    <h2 class="section-title">How we build<br>at scale.</h2>
+    <p class="section-lead">Texcite operates a lean node assembly and integration model — sourcing proven commercial components, assembling and testing in South Africa, and deploying through our certified installer network. No exotic manufacturing required. This is systems integration, not semiconductor fabrication.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="card-title">Compute components</div>
+        <div class="card-body">Dell PowerEdge servers and NVIDIA RTX PRO 6000 GPUs are procured through established SA channel partners (Rectron, Pinnacle, Westcon). These are commercial off-the-shelf components with local stock and warranty support. GPU allocation secured via NVIDIA's channel programme.</div>
+        <span class="card-tag">NVIDIA PARTNER CHANNEL</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 11v2"/></svg></div>
+        <div class="card-title">Energy systems</div>
+        <div class="card-body">15 kWh LFP battery packs from Pylontech or Hubble (both SA-stocked, SANS certified). DC-coupled solar integration via Victron or SolarEdge inverters already widely deployed in the SA solar market. All compliant with SA electrical regulations.</div>
+        <span class="card-tag">SANS 164 COMPLIANT</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div class="card-title">Enclosure &amp; integration</div>
+        <div class="card-body">Weatherised outdoor enclosures manufactured by SA metal fabricators to Texcite's IP54 spec. Liquid cooling loops assembled and pressure-tested in-house. Full node integration, burn-in, and performance validation completed before deployment.</div>
+        <span class="card-tag">SA MANUFACTURED</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#3d7a58"/></svg></div>
+        <div class="card-title">Connectivity bundle</div>
+        <div class="card-body">Texcite partners with Liquid Intelligent Technologies or Rain for bundled fibre/5G connectivity at host sites. A single connectivity contract covers the node — no host procurement required. LTE failover ensures uptime during fibre faults.</div>
+        <span class="card-tag">BUNDLED CONNECTIVITY</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="card-title">Assembly &amp; QA</div>
+        <div class="card-body">Nodes assembled and tested at Texcite's Johannesburg integration facility. Each unit undergoes 72-hour burn-in under synthetic inference load before shipping. Target throughput: 10 nodes per week by month 6, scaling to 40 per week by month 18.</div>
+        <span class="card-tag">JHB INTEGRATION FACILITY</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg></div>
+        <div class="card-title">Field service model</div>
+        <div class="card-body">Texcite trains and certifies field technicians through its installer partner network. Mean time to repair target: under 4 hours. Remote diagnostics via TXOS flag hardware anomalies before failure. Spare parts kits held at regional depots in JHB, CPT, and DBN.</div>
+        <span class="card-tag">4HR MTTР TARGET</span>
+      </div>
+    </div>
+
+    <div style="background:var(--forest);border-radius:16px;padding:48px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:32px;">
+      <div style="text-align:center;">
+        <div style="font-family:var(--display);font-size:36px;font-weight:800;color:var(--mint);letter-spacing:-0.02em;line-height:1;">R380k</div>
+        <div style="font-family:var(--mono);font-size:9px;color:rgba(127,201,158,0.65);letter-spacing:0.1em;margin-top:6px;">BILL OF MATERIALS / NODE</div>
+        <div style="font-size:12px;color:rgba(245,240,232,0.45);margin-top:8px;font-weight:300;line-height:1.5;">Target BOM at 50-unit volume (GPU, server, battery, enclosure, cooling)</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--display);font-size:36px;font-weight:800;color:var(--leaf);letter-spacing:-0.02em;line-height:1;">R480k</div>
+        <div style="font-family:var(--mono);font-size:9px;color:rgba(127,201,158,0.65);letter-spacing:0.1em;margin-top:6px;">ALL-IN DEPLOYED COST</div>
+        <div style="font-size:12px;color:rgba(245,240,232,0.45);margin-top:8px;font-weight:300;line-height:1.5;">Including assembly, connectivity install, commissioning, and first 3 months opex</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--display);font-size:36px;font-weight:800;color:var(--gold2);letter-spacing:-0.02em;line-height:1;">40%</div>
+        <div style="font-family:var(--mono);font-size:9px;color:rgba(127,201,158,0.65);letter-spacing:0.1em;margin-top:6px;">BOM REDUCTION BY YEAR 2</div>
+        <div style="font-size:12px;color:rgba(245,240,232,0.45);margin-top:8px;font-weight:300;line-height:1.5;">Volume procurement, next-gen GPU efficiency gains, and local enclosure tooling</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--display);font-size:36px;font-weight:800;color:var(--mint);letter-spacing:-0.02em;line-height:1;">10 B-BBEE</div>
+        <div style="font-family:var(--mono);font-size:9px;color:rgba(127,201,158,0.65);letter-spacing:0.1em;margin-top:6px;">PROCUREMENT POINTS</div>
+        <div style="font-size:12px;color:rgba(245,240,232,0.45);margin-top:8px;font-weight:300;line-height:1.5;">SA assembly and local supplier network qualifies Texcite for enterprise and government procurement preference</div>
       </div>
     </div>
   </div>
@@ -973,54 +1093,145 @@ footer {
   <div class="page">
     <p class="section-tag">04 — HOST SEGMENTS</p>
     <h2 class="section-title">Who hosts the nodes.</h2>
-    <p class="section-lead">Three primary host categories — each with distinct value propositions, procurement pathways, and ESG alignment. Hosts receive a revenue share and retain all carbon credits for their own reporting.</p>
+    <p class="section-lead">Three primary host categories — each with distinct value propositions, procurement pathways, and ESG alignment. Hosts earn a monthly revenue share, retain all carbon credits for their own ESG reporting, and where solar is co-deployed, the combined ROI makes the decision purely financial.</p>
 
-    <div class="segment">
-      <div>
-        <div class="segment-sub">HOST TYPE 01</div>
-        <div class="segment-label">Schools &amp; universities</div>
-      </div>
-      <div>
-        <div class="segment-body">Educational institutions are ideal first-movers: secure, monitored premises; many are already deploying solar under government mandates; sympathetic procurement processes; strong ESG narrative. Revenue earned by the school can fund technology infrastructure, bursaries, or maintenance. University campuses offer larger footprints enabling multi-node clusters that unlock higher revenue tiers.</div>
-        <div class="pill-list">
-          <span class="pill green">Revenue share: R8–24k / month / node</span>
-          <span class="pill">Existing solar penetration: 35%</span>
-          <span class="pill blue">Procurement: DoE / SGB approval</span>
-          <span class="pill">Site security: ✓ staffed</span>
+    <div style="display:flex;flex-direction:column;gap:2px;margin-bottom:56px;">
+
+      <!-- HOST 01 -->
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+        <div style="display:grid;grid-template-columns:200px 1fr 1fr 1fr;align-items:stretch;">
+          <div style="padding:32px 28px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--sage);letter-spacing:0.14em;margin-bottom:8px;">HOST TYPE 01</div>
+            <div style="font-family:var(--display);font-size:20px;font-weight:700;color:var(--forest);line-height:1.15;">Schools &amp;<br>Universities</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">WHY THEY HOST</div>
+            <div style="font-size:13px;color:var(--ink2);font-weight:300;line-height:1.7;">Secure monitored premises with growing solar mandates. Revenue funds bursaries, tech infrastructure, or maintenance. University campuses unlock multi-node cluster tiers.</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">COMBINED ROI</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Node revenue share</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--forest);">R8–24k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Solar savings (if co-deployed)</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--sage);">R3–8k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Carbon credits retained</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--gold);">~R210<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:28px 24px;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">PROCUREMENT PATH</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Approval via DoE or School Governing Body (SGB)</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Solar penetration: 35% of target schools already equipped</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Cycle: 90–120 days — longer but high volume</div>
+              <div style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0;"></div>
+                <span style="font-family:var(--mono);font-size:10px;color:var(--sage);">Phase 2 priority</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="segment">
-      <div>
-        <div class="segment-sub">HOST TYPE 02</div>
-        <div class="segment-label">Hospitals &amp; clinics</div>
-      </div>
-      <div>
-        <div class="segment-body">Private hospital groups and large provincial hospitals operate 24/7, have generator backup power, and face increasing AI workload demands for medical imaging and diagnostics. Hosting a SNAP XFRA node creates priority compute access for internal AI applications at preferential rates — a compelling in-kind benefit alongside cash income. Hospital sustainability officers increasingly hold capex influence and are motivated by carbon reporting requirements.</div>
-        <div class="pill-list">
-          <span class="pill green">Revenue share: R12–36k / month / node</span>
-          <span class="pill gold">In-kind: preferential inference access</span>
-          <span class="pill">Power: UPS + generator compatible</span>
-          <span class="pill blue">Approval: CFO + sustainability officer</span>
+      <!-- HOST 02 -->
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+        <div style="display:grid;grid-template-columns:200px 1fr 1fr 1fr;align-items:stretch;">
+          <div style="padding:32px 28px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;background:#f7fbf8;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--sage);letter-spacing:0.14em;margin-bottom:8px;">HOST TYPE 02</div>
+            <div style="font-family:var(--display);font-size:20px;font-weight:700;color:var(--forest);line-height:1.15;">Hospitals &amp;<br>Clinics</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">WHY THEY HOST</div>
+            <div style="font-size:13px;color:var(--ink2);font-weight:300;line-height:1.7;">24/7 operations, generator backup, and rising AI demand for diagnostics and imaging. Hosting unlocks priority inference access at preferential rates — a direct in-kind benefit alongside cash income.</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">COMBINED ROI</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Node revenue share</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--forest);">R12–36k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Preferential inference (in-kind)</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--sage);">R6–18k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo value</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Carbon credits retained</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--gold);">~R210<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:28px 24px;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">PROCUREMENT PATH</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Approval via CFO and sustainability officer</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Generator + UPS infrastructure already in place</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Cycle: 60–90 days for private groups</div>
+              <div style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--forest);flex-shrink:0;"></div>
+                <span style="font-family:var(--mono);font-size:10px;color:var(--forest);">Phase 1 pilot priority</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="segment">
-      <div>
-        <div class="segment-sub">HOST TYPE 03</div>
-        <div class="segment-label">Businesses &amp; SMEs</div>
-      </div>
-      <div>
-        <div class="segment-body">Office parks, retail groups, logistics hubs, and data-forward SMEs represent the most scalable segment. Many already operate solar post-load-shedding. SNAP XFRA nodes can be co-deployed with new solar installs — creating a combined solar+compute ROI story that makes the investment compelling on purely financial grounds. Carbon credits can be traded on voluntary markets or used to satisfy supply chain ESG requirements from large buyers.</div>
-        <div class="pill-list">
-          <span class="pill green">Revenue share: R10–30k / month / node</span>
-          <span class="pill gold">Carbon credits: direct tradeable asset</span>
-          <span class="pill">Combined solar ROI narrative</span>
-          <span class="pill blue">Decision cycle: 60–90 days (MD/CFO)</span>
+      <!-- HOST 03 -->
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+        <div style="display:grid;grid-template-columns:200px 1fr 1fr 1fr;align-items:stretch;">
+          <div style="padding:32px 28px;border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--sage);letter-spacing:0.14em;margin-bottom:8px;">HOST TYPE 03</div>
+            <div style="font-family:var(--display);font-size:20px;font-weight:700;color:var(--forest);line-height:1.15;">Businesses &amp;<br>SMEs</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">WHY THEY HOST</div>
+            <div style="font-size:13px;color:var(--ink2);font-weight:300;line-height:1.7;">Most scalable segment. Office parks, logistics hubs, and retail groups. Many already have solar post-load-shedding. Texcite Nodes co-deploy with new installs, making the investment compelling on purely financial grounds.</div>
+          </div>
+          <div style="padding:28px 24px;border-right:1px solid var(--border);">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">COMBINED ROI</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Node revenue share</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--forest);">R10–30k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Solar savings (co-deployed)</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--sage);">R4–12k<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+              <div style="height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--mono);font-size:11px;color:var(--muted);">Carbon credits (tradeable)</div>
+                <div style="font-family:var(--display);font-size:18px;font-weight:700;color:var(--gold);">~R210<span style="font-size:12px;font-weight:400;color:var(--muted);font-family:var(--sans);"> / mo</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:28px 24px;">
+            <div style="font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;margin-bottom:12px;">PROCUREMENT PATH</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Decision via MD or CFO — no board approval required</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Carbon credits satisfy ESG supply chain requirements</div>
+              <div style="font-size:12px;color:var(--ink2);font-weight:300;">Cycle: 60–90 days</div>
+              <div style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--forest);flex-shrink:0;"></div>
+                <span style="font-family:var(--mono);font-size:10px;color:var(--forest);">Phase 1 pilot priority</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -1035,27 +1246,27 @@ footer {
 
     <div class="flow-diagram">
       <div class="flow-node">
-        <span class="flow-icon">🔧</span>
+        <span class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
         <div class="flow-title">Installer partner</div>
         <div class="flow-body">Solar / IT EPC firm. Existing client relationships. Qualified electricians and rack technicians.</div>
       </div>
       <div class="flow-node">
-        <span class="flow-icon">📋</span>
+        <span class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg></span>
         <div class="flow-title">Site survey</div>
         <div class="flow-body">Partner assesses solar capacity, power quality, connectivity, and space. Texcite provides proposal tools.</div>
       </div>
       <div class="flow-node">
-        <span class="flow-icon">⚙️</span>
+        <span class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></span>
         <div class="flow-title">Install &amp; commission</div>
-        <div class="flow-body">Partner installs SNAP XFRA and integrates with host solar inverter. Texcite remote-commissions the node.</div>
+        <div class="flow-body">Partner installs the Texcite Node and integrates with host solar inverter. Texcite remote-commissions the node.</div>
       </div>
       <div class="flow-node">
-        <span class="flow-icon">💰</span>
+        <span class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></span>
         <div class="flow-title">Recurring revenue</div>
         <div class="flow-body">Partner earns 15% of host revenue share for 24 months. Managed centrally by Texcite billing.</div>
       </div>
       <div class="flow-node">
-        <span class="flow-icon">📈</span>
+        <span class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
         <div class="flow-title">Scale &amp; upsell</div>
         <div class="flow-body">Partners grow their node portfolio. Volume tiers unlock higher commissions up to 22%.</div>
       </div>
@@ -1069,7 +1280,7 @@ footer {
       </div>
       <div class="card">
         <div class="card-title">Partner requirements</div>
-        <div class="card-body">Registered electrical or IT contractor. Minimum 3 qualified technicians. Ability to carry light hardware inventory. Must complete Texcite XFRA installer certification (2-day program).</div>
+        <div class="card-body">Registered electrical or IT contractor. Minimum 3 qualified technicians. Ability to carry light hardware inventory. Must complete Texcite Node installer certification (2-day program).</div>
         <span class="card-tag">LOW BARRIER</span>
       </div>
       <div class="card">
@@ -1090,7 +1301,7 @@ footer {
 
     <div class="carbon-hero">
       <div class="carbon-hero-title">The TexGreen Credit Standard</div>
-      <div class="carbon-hero-body">Every SNAP XFRA unit generates a verifiable stream of carbon displacement data: renewable energy consumed (kWh), carbon-equivalent displaced vs. grid average (kg CO₂e), and compute-hours delivered on clean power. Texcite aggregates this data and issues TexGreen Credits — audited, blockchain-anchored, and compatible with VERRA VCS and Gold Standard reporting frameworks.</div>
+      <div class="carbon-hero-body">Every Texcite Node generates a verifiable stream of carbon displacement data: renewable energy consumed (kWh), carbon-equivalent displaced vs. grid average (kg CO₂e), and compute-hours delivered on clean power. Texcite aggregates this data and issues TexGreen Credits — audited, blockchain-anchored, and compatible with VERRA VCS and Gold Standard reporting frameworks.</div>
       <div class="carbon-grid">
         <div class="carbon-metric">
           <div class="num">36<span style="font-size:16px">kg</span></div>
@@ -1112,19 +1323,19 @@ footer {
 
     <div class="card-grid">
       <div class="card">
-        <div class="card-icon" style="background:#e1f0e7">📡</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#3d7a58"/></svg></div>
         <div class="card-title">Real-time metering</div>
         <div class="card-body">Smart energy meters on each unit report kWh source (solar vs. grid) every 15 minutes. Data is tamper-evident and signed by the unit's secure enclave.</div>
         <span class="card-tag">ISO 50001 ALIGNED</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#eaf2fc">⛓️</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="6" height="6" rx="1"/><rect x="16" y="7" width="6" height="6" rx="1"/><rect x="9" y="14" width="6" height="6" rx="1"/><path d="M5 13v3l4 2M19 13v3l-4 2M12 7V4"/></svg></div>
         <div class="card-title">Blockchain registry</div>
         <div class="card-body">Credits are minted on a public ledger (Polygon / Celo) enabling instant transfer, transparent audit trail, and retirement tracking for ESG reporting teams.</div>
         <span class="card-tag blue">TRANSPARENT</span>
       </div>
       <div class="card">
-        <div class="card-icon" style="background:#fdf3e2">🏆</div>
+        <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d7a58" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
         <div class="card-title">Third-party verification</div>
         <div class="card-body">Annual spot audits by accredited verifiers (SGS / Bureau Veritas). Texcite targets VERRA VCS registration within 18 months of network launch.</div>
         <span class="card-tag gold">VERRA VCS TARGET</span>
@@ -1132,7 +1343,7 @@ footer {
     </div>
 
     <div class="highlight-box">
-      <div class="highlight-box-title">💡 COMPETITIVE ADVANTAGE</div>
+      <div class="highlight-box-title"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>COMPETITIVE ADVANTAGE</div>
       <div class="highlight-box-body">Unlike renewable energy certificates (RECs) that simply claim clean energy was produced somewhere, TexGreen Credits prove that a specific AI workload was executed on green energy at an identifiable location. This makes TexGreen Credits the first compute-attributable carbon instrument — a far stronger ESG claim than a generic offset.</div>
     </div>
   </div>
@@ -1153,7 +1364,7 @@ footer {
             <th>REVENUE STREAM</th>
             <th>MECHANISM</th>
             <th>UNIT ECONOMICS</th>
-            <th>ANNUAL (500 NODES)</th>
+            <th>ANNUAL (500 NODES · PHASE 1 FULL)</th>
           </tr>
         </thead>
         <tbody>
@@ -1176,10 +1387,10 @@ footer {
             <td>R378k</td>
           </tr>
           <tr>
-            <td>Hardware margin</td>
-            <td>12–18% markup on SNAP XFRA units sold to partners</td>
-            <td>R18k–28k one-time / unit</td>
-            <td>R9M–14M (500 units)</td>
+            <td>Node hardware margin</td>
+            <td>Texcite-built nodes sold to installer partners at cost + 20%</td>
+            <td>R76k margin / unit sold</td>
+            <td>R38M (500 units)</td>
           </tr>
           <tr>
             <td>Installer certification</td>
@@ -1194,7 +1405,7 @@ footer {
             <td>R4.8M–15M (50 customers)</td>
           </tr>
           <tr class="total">
-            <td colspan="3">Projected Phase 1 annual revenue (conservative)</td>
+            <td colspan="3">Projected Phase 1 full annual revenue (conservative)</td>
             <td>R42M – R54M</td>
           </tr>
         </tbody>
@@ -1205,11 +1416,13 @@ footer {
       <div class="margin-card" style="background:#f7fbf8;border-color:rgba(61,122,88,0.25);">
         <div style="font-family:var(--mono);font-size:10px;color:var(--sage);letter-spacing:0.12em;margin-bottom:16px;">COST STRUCTURE / NODE</div>
         <div class="inv-grid">
-          <div class="inv-row"><span>Hardware (amortised 5yr)</span><span>R7,200/mo</span></div>
-          <div class="inv-row"><span>Connectivity (10GbE leased)</span><span>R2,400/mo</span></div>
-          <div class="inv-row"><span>Remote monitoring &amp; support</span><span>R800/mo</span></div>
-          <div class="inv-row"><span>Energy cost (net of solar)</span><span>R1,200/mo</span></div>
-          <div class="inv-row"><span>Total COGS / node</span><span style="color:var(--sage);font-size:14px;">R11,600/mo</span></div>
+          <div class="inv-row"><span>Hardware BOM (amortised 5yr)</span><span>R6,333/mo</span></div>
+          <div class="inv-row"><span>Assembly &amp; QA (amortised)</span><span>R1,600/mo</span></div>
+          <div class="inv-row"><span>Connectivity (fibre + LTE)</span><span>R2,200/mo</span></div>
+          <div class="inv-row"><span>Remote monitoring &amp; TXOS</span><span>R600/mo</span></div>
+          <div class="inv-row"><span>Energy cost (net of solar)</span><span>R1,100/mo</span></div>
+          <div class="inv-row"><span>Field service allocation</span><span>R500/mo</span></div>
+          <div class="inv-row"><span>Total COGS / node</span><span style="color:var(--sage);font-size:14px;">R12,333/mo</span></div>
         </div>
       </div>
       <div class="margin-card">
@@ -1244,17 +1457,18 @@ footer {
     <p class="section-lead">Three disciplined phases, each building on proven unit economics and expanded installer coverage before committing to the next tranche of capital.</p>
 
     <div class="phase-row">
-      <div><div class="phase-badge p1">PHASE 1<br>MVP</div></div>
+      <div><div class="phase-badge p1">PHASE 1<br>BUILD</div></div>
       <div>
-        <div class="phase-timeline">MONTHS 1–18 · PILOT + PROVE</div>
-        <div class="phase-title">Seed network — 50 nodes</div>
-        <div class="phase-body">Deploy 50 SNAP XFRA units across 3 cities (Johannesburg, Cape Town, Durban) across 15 schools, 10 clinics, and 25 SME office parks. All sites must have existing solar or commit to install. Texcite maintains direct sales and deployment control; no installer partners yet. Focus on proving unit economics, refining carbon telemetry, and signing first 5 enterprise compute customers.</div>
+        <div class="phase-timeline">MONTHS 1–12 · BUILD + PROVE</div>
+        <div class="phase-title">Seed network — 10 nodes built &amp; deployed</div>
+        <div class="phase-body">Establish Johannesburg assembly and integration facility. Secure NVIDIA GPU channel allocation and begin hardware procurement. Build and QA-test 10 nodes against 72-hour synthetic inference load benchmarks. Deploy across 10 host sites in Johannesburg — priority hosts are hospitals and businesses (faster procurement than schools), with 1 node per site. Launch TXOS orchestration platform v1. Sign first 2–3 enterprise compute customers. Validate unit economics and carbon telemetry before committing to Phase 2 scale.</div>
         <div class="phase-kpis">
-          <span class="phase-kpi">50 nodes live</span>
-          <span class="phase-kpi">5 enterprise customers</span>
+          <span class="phase-kpi">10 nodes built &amp; live</span>
+          <span class="phase-kpi">10 host sites</span>
+          <span class="phase-kpi">JHB facility operational</span>
+          <span class="phase-kpi">2–3 enterprise customers</span>
           <span class="phase-kpi">TexGreen v1 launched</span>
-          <span class="phase-kpi">R4.2M ARR target</span>
-          <span class="phase-kpi">Carbon audit completed</span>
+          <span class="phase-kpi">R840k ARR target</span>
         </div>
       </div>
     </div>
@@ -1264,13 +1478,13 @@ footer {
       <div>
         <div class="phase-timeline">MONTHS 19–36 · CHANNEL + EXPAND</div>
         <div class="phase-title">Partner network — 500 nodes</div>
-        <div class="phase-body">Launch installer partner program. Target 20 certified installer partners across 6 provinces. Partners own host acquisition and installation; Texcite handles hardware logistics and remote operations. Expand compute customer base to 50+ enterprise accounts. Submit VERRA VCS application. Expand to East Africa (Kenya, Tanzania) as secondary market. Carbon credit trading desk goes live.</div>
+        <div class="phase-body">Scale assembly to 40 nodes/week. Launch installer partner program — 20 certified partners across 6 provinces deploy nodes sourced from Texcite's facility. Open second assembly line in Cape Town. Expand compute customer base to 50+ enterprise accounts. Submit VERRA VCS application. Begin East Africa expansion (Kenya, Tanzania) with local assembly partnerships. Carbon credit trading desk goes live. Start licensing TXOS to regional operators.</div>
         <div class="phase-kpis">
           <span class="phase-kpi">500 nodes live</span>
+          <span class="phase-kpi">40 nodes/week capacity</span>
           <span class="phase-kpi">20 installer partners</span>
           <span class="phase-kpi">50+ enterprise customers</span>
           <span class="phase-kpi">R42M ARR target</span>
-          <span class="phase-kpi">East Africa expansion</span>
         </div>
       </div>
     </div>
@@ -1280,13 +1494,13 @@ footer {
       <div>
         <div class="phase-timeline">MONTHS 37–60 · CONTINENT</div>
         <div class="phase-title">Pan-African network — 5,000+ nodes</div>
-        <div class="phase-body">Leverage the proven playbook across 10 African markets with local installer partners and regional anchor compute customers (telcos, banks, government AI initiatives). VERRA VCS certification unlocks international carbon credit buyers. Launch TexGrid — a public API marketplace where developers can purchase green inference at competitive rates. Explore strategic partnerships with African Development Bank for subsidised school deployments.</div>
+        <div class="phase-body">Leverage proven build-deploy-operate playbook across 10 African markets. License node manufacturing IP to local assembly partners in Nigeria, Kenya, and Egypt — reducing logistics costs and creating local jobs. VERRA VCS certification unlocks international carbon credit buyers. Launch TexGrid — a public API marketplace where developers can purchase green inference at competitive rates. Explore strategic partnerships with the African Development Bank for subsidised school deployments. Pursue TXOS as a standalone SaaS product for third-party distributed compute operators.</div>
         <div class="phase-kpis">
           <span class="phase-kpi">5,000+ nodes</span>
           <span class="phase-kpi">10 markets</span>
           <span class="phase-kpi">VERRA VCS certified</span>
           <span class="phase-kpi">R420M+ ARR target</span>
-          <span class="phase-kpi">TexGrid API marketplace</span>
+          <span class="phase-kpi">TXOS licensed SaaS</span>
         </div>
       </div>
     </div>
@@ -1299,19 +1513,20 @@ footer {
   <div class="page">
     <p class="section-tag">09 — INVESTMENT REQUIREMENTS</p>
     <h2 class="section-title">What we need<br>to move.</h2>
-    <p class="section-lead">Phase 1 requires seed capital to cover hardware procurement, initial deployments, and 18 months of operational runway. The business is designed to reach cashflow positive at 80 nodes.</p>
+    <p class="section-lead">Phase 1 requires seed capital to build and deploy 10 nodes, establish the JHB assembly facility, and fund 12 months of operational runway. A lean first tranche that proves the model before committing to scale.</p>
 
     <div class="card-grid">
       <div class="card" style="border-color:rgba(61,122,88,0.3);background:#f7fbf8;">
         <div style="font-family:var(--mono);font-size:10px;color:var(--sage);letter-spacing:0.12em;margin-bottom:10px;">CAPITAL REQUIREMENT</div>
-        <div class="inv-num">R18.5M</div>
-        <div style="font-size:13px;color:var(--muted);margin:6px 0 20px;font-weight:300;">Phase 1 seed (50 nodes, 18-month runway)</div>
+        <div class="inv-num">R10M</div>
+        <div style="font-size:13px;color:var(--muted);margin:6px 0 20px;font-weight:300;">Phase 1 seed (10 nodes built, 12-month runway)</div>
         <div class="inv-grid">
-          <div class="inv-row"><span>Hardware — 50 XFRA units</span><span>R12M</span></div>
-          <div class="inv-row"><span>Installation &amp; commissioning</span><span>R2.5M</span></div>
-          <div class="inv-row"><span>Software platform build</span><span>R1.8M</span></div>
-          <div class="inv-row"><span>Sales &amp; marketing</span><span>R1.2M</span></div>
-          <div class="inv-row"><span>Operations &amp; reserve</span><span>R1M</span></div>
+          <div class="inv-row"><span>Node BOM — 10 units @ R380k</span><span>R3.8M</span></div>
+          <div class="inv-row"><span>Assembly, QA &amp; integration facility</span><span>R2.2M</span></div>
+          <div class="inv-row"><span>Installation &amp; commissioning</span><span>R600k</span></div>
+          <div class="inv-row"><span>TXOS software platform build</span><span>R2M</span></div>
+          <div class="inv-row"><span>Sales, marketing &amp; BD</span><span>R800k</span></div>
+          <div class="inv-row"><span>Operations, support &amp; reserve</span><span>R600k</span></div>
         </div>
       </div>
 
@@ -1319,18 +1534,18 @@ footer {
         <div style="font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:0.12em;margin-bottom:14px;">PARTNERSHIP ASKS</div>
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div>
-            <div class="card-title" style="font-size:14px;margin-bottom:6px;">SNAP XFRA (hardware partner)</div>
-            <div class="card-body">Preferred pricing for 50-unit pilot. Joint go-to-market on African distribution. Co-branded infrastructure story for investor materials.</div>
+            <div class="card-title" style="font-size:14px;margin-bottom:6px;">NVIDIA GPU allocation</div>
+            <div class="card-body">RTX PRO 6000 Blackwell GPU channel allocation for 10-node Phase 1 (160 GPUs total). Texcite is pursuing NVIDIA partner programme membership to secure priority supply and volume pricing. A letter of intent from NVIDIA's SA channel significantly de-risks Phase 1 delivery.</div>
           </div>
           <div style="height:1px;background:var(--border)"></div>
           <div>
-            <div class="card-title" style="font-size:14px;margin-bottom:6px;">Solar EPC partners</div>
-            <div class="card-body">3–5 anchor installer partners for Phase 1. Existing school/hospital client relationships preferred.</div>
+            <div class="card-title" style="font-size:14px;margin-bottom:6px;">Connectivity partner (Liquid / Rain)</div>
+            <div class="card-body">Wholesale connectivity agreement for bundled fibre + LTE at host sites. A volume deal with a single provider simplifies deployment and gives Texcite a fixed, predictable connectivity cost per node.</div>
           </div>
           <div style="height:1px;background:var(--border)"></div>
           <div>
-            <div class="card-title" style="font-size:14px;margin-bottom:6px;">Enterprise compute anchors</div>
-            <div class="card-body">1–2 pilot enterprise customers willing to commit to 6-month inference contract in exchange for preferential pricing and TexGreen credits.</div>
+            <div class="card-title" style="font-size:14px;margin-bottom:6px;">Enterprise compute anchor customer</div>
+            <div class="card-body">1–2 pilot enterprise customers willing to commit to a 6-month inference contract in exchange for preferential pricing and TexGreen credits. An LOI here transforms the fundraising story.</div>
           </div>
         </div>
       </div>
@@ -1340,23 +1555,23 @@ footer {
         <div class="milestone-list">
           <div class="milestone">
             <div class="milestone-num">01</div>
-            <div class="milestone-text">Month 3 — First 5 nodes live, compute sales begin</div>
+            <div class="milestone-text">Month 2 — JHB assembly facility operational, GPU procurement confirmed</div>
           </div>
           <div class="milestone">
             <div class="milestone-num">02</div>
-            <div class="milestone-text">Month 6 — TexGreen v1 live, carbon credits issued to first hosts</div>
+            <div class="milestone-text">Month 4 — First 3 nodes deployed and live, compute sales begin</div>
           </div>
           <div class="milestone">
             <div class="milestone-num">03</div>
-            <div class="milestone-text">Month 9 — 25 nodes live, first profitability unit test</div>
+            <div class="milestone-text">Month 6 — TexGreen v1 live, carbon credits issued to first hosts</div>
           </div>
           <div class="milestone">
             <div class="milestone-num">04</div>
-            <div class="milestone-text">Month 12 — 50 nodes live, installer partner program launches</div>
+            <div class="milestone-text">Month 9 — All 10 nodes live, unit economics validated</div>
           </div>
           <div class="milestone">
             <div class="milestone-num">05</div>
-            <div class="milestone-text">Month 18 — Series A raise for Phase 2 at proven economics</div>
+            <div class="milestone-text">Month 12 — Series A raise for Phase 2 (50 nodes) at proven economics</div>
           </div>
         </div>
       </div>
@@ -1374,8 +1589,8 @@ footer {
     </div>
     <div class="footer-legal">
       CONFIDENTIAL — INTERNAL USE ONLY<br>
-      MVP BUSINESS PROPOSAL · VERSION 1.0<br>
-      SNAP XFRA DISTRIBUTED DATACENTER PROGRAM<br>
+      MVP BUSINESS PROPOSAL · VERSION 2.0<br>
+      TEXCITE DISTRIBUTED COMPUTE PROGRAM<br>
       © 2026 TEXCITE. ALL RIGHTS RESERVED.
     </div>
   </div>
